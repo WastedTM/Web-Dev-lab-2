@@ -1,14 +1,57 @@
-.App {
-  text-align: center;
+/*
+Все, що пов'язано з меню та його стилями
+*/
+.Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 6vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Menu a{
+    margin-left: 5px;
+
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 3px;
+    padding: 3px;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+/*
+Все, що пов'язано з header
+*/
+.Header {
+    background-color: #282c34;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+/*
+Все, що пов'язано зі стилями body
+*/
+
+/*
+Все, що пов'язано зі стилізацію компонентів у footer
+*/
+.Footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 7vh;
+
+    font-size: 12px;
+
+    margin-top: 40px;
 }

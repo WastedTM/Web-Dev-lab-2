@@ -1,17 +1,24 @@
 import './App.css';
-import MyComponent from "./MyComponent";
+import Header from "./Header";
+import Menu from "./Menu";
+import Body from "./Body";
+import Footer from "./Footer";
 
 function App() {
-  return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Create React App</h1>
-        </header>
-        <main>
-          <MyComponent />
-        </main>
-      </div>
-  );
+    const items = [
+        {id: 1, name: 'Товар 1'},
+        {id: 2, name: 'Товар 2'},
+        {id: 3, name: 'Товар 3'},
+    ];
+
+    return (
+        <div>
+            <Header/>
+            <Menu/>
+            <Body items={items}/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
